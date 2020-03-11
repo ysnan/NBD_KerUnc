@@ -1,1 +1,15 @@
 # Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.idea/.gitignore
+.idea/deployment.xml
+.idea/inspectionProfiles/
+.idea/kernel_error_code.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/remote-mappings.xml
+.idea/vcs.xml
+KN_0_Unet_CC_WV/
+KN_2.55_Unet_CC_WV/
+model/.DS_Store
+pretrained_model/
+sigma_2.55_ker_levin_nk_bm_v2/
