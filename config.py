@@ -9,7 +9,7 @@ class get_test_config():
 
         # Problem Settings
         self.parser.add_argument('--dataset_name', default='Levin',choices=['Levin', 'Sun', 'Lai', 'Lai_Real'])
-        self.parser.add_argument('-s', '--sigma', default = '0', choices=['0','2.55','7.65'])
+        self.parser.add_argument('-s', '--sigma', default = '0', choices=['0','2.55'])
 
         # Training Parameters
         self.parser.add_argument('--layers', type=int, default=4, help='net layers')
@@ -47,8 +47,7 @@ class get_test_config():
         # Select Blind Deconvolution Kernels by the kernels.
         if self.dataset_name == 'Sun':
             self.test_bl_dir = './data/Sun_NK/sigma_{0}_ker_levin/'.format(self.sigma)
-            # self.test_ker = ['cho', 'michaeli','xu']
-            self.test_ker = ['michaeli', 'xu']
+            self.test_ker = ['cho', 'michaeli','xu']
             self.tr_ker_dir = './data/kernels/Levin09_v7.mat'
             self.bd_cut = 28
         elif self.dataset_name == 'Levin':

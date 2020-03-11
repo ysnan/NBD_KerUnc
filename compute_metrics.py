@@ -9,7 +9,7 @@ from utils.metrics import aver_bmp_psnr_ssim_par
 parser = argparse.ArgumentParser(description='compute PSNR')
 parser.add_argument('--parallel', default=True, help='Parallel computation of the PSNR')
 parser.add_argument('--dataset_name', default='Lai' ,choices=['Levin', 'Sun', 'Lai', 'Lai_Real'])
-parser.add_argument('-s', '--sigma', default = '0', choices=['0' ,'2.55' ,'7.65'])
+parser.add_argument('-s', '--sigma', default = '0', choices=['0' ,'2.55'])
 
 args = parser.parse_args()
 
