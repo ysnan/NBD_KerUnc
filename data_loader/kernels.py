@@ -1,6 +1,5 @@
 import numpy as np
-from utils.imtools import cconv_np
-from utils.imtools import fspecial
+from utils.imtools import fspecial, cconv_np, imshow
 from scipy.ndimage.morphology import binary_dilation,generate_binary_structure
 from scipy.ndimage.measurements import center_of_mass
 
@@ -23,7 +22,7 @@ def gen_nker(ker, v_g = 0.01, gaus_var = 0.8):
 
     ## Omit some part
     if np.random.randint(2):
-        Omt = np.random.binomial(1, 0.2, size=[kh, kv])
+        Omt = np.random.binomial(1, 0.5, size=[kh, kv])
         Omt[nz_ker == np.max(nz_ker)] = 1
         nz_ker = nz_ker * Omt
 

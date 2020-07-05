@@ -121,7 +121,7 @@ class Tester():
                 opt_db_chn[:,:,:,:,c] = opt_db[-1].cpu()
             bat_opt.append(opt_db_chn)
             if self.args.save_img:
-                imshow(opt_db_chn,dir=self.args.test_img_dir + self.args.dataset_name + '_' + name + '/', str = bat['name'][0])
+                imshow(opt_db_chn,dir=self.args.test_save_dir + self.args.dataset_name + '_' + name + '/', str = bat['name'][0])
 
     @staticmethod
     def _ker_to_list(ker):
