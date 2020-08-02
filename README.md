@@ -3,7 +3,7 @@
 
 
 This repo provides pre-trained models and the results on benchmark datasets of our CVPR 2020 paper.
-[main paper](), [supp](), [poster]()
+[main paper](./paper/kn.pdf), [supp](./paper/kn_supp.pdf), [poster](./paper/kn_poster.pdf)
 
 
 
@@ -58,7 +58,13 @@ Vasu, Subeesh, Venkatesh Reddy Maligireddy, and A. N. Rajagopalan. "[Non-blind d
 ## Bibtex
 
 ```
-
+@InProceedings{Nan_2020_CVPR,
+author = {Nan, Yuesong and Ji, Hui},
+title = {Deep Learning for Handling Kernel/model Uncertainty in Image Deconvolution},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
 ```
 
 
